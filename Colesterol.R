@@ -2,6 +2,7 @@ library(tidyverse)
 library(moments)
 
 #Calculo de estadısticos descriptivos
+colesterol <- read.csv("~/Documents/colesterol.txt", sep="")
 col=colesterol[,1]
 media=mean(col)
 varianza=var(col)
